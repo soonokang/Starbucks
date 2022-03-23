@@ -145,4 +145,4 @@ spyEls.forEach(function (spyEl) {
 >버튼을 클릭시 프로모션 슬라이드영역이 나타났다 사라지게하는 효과를 자바스크립트를 통해 넣었습니다.
 >슬라이드가 나타나있지 않았을 때 버튼 방향은 아래로 향하게 하고
 >버튼을 눌러 슬라이드가 나타났을 때는 버튼을 180도 회전시켜 위 방향을 바라보도록 설정하였습니다.
->![toggle-btn-before](./images/toggole-promotion-before.png)
+>![toggle-btn-before](./images/toggle-promotion-before.png)
