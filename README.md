@@ -18,11 +18,11 @@ favicon.png 500 x 500 (px)
 > ```
 
 ## 오픈 그래프(The Open Graph protocol)
-웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.  
+>웹페이지가 소셜 미디어(페이스북 등)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.  
 [더 많은 오픈그래프 속성 보기](https://ogp.me/)
 
 ## swifer
-기본적인 슬라이드도 만들기 어렵지만, swifer 슬라이드 플러그인을 통해 간단히 슬라이드를 제작할 수 있으며
+>기본적인 슬라이드도 만들기 어렵지만, swifer 슬라이드 플러그인을 통해 간단히 슬라이드를 제작할 수 있으며
 이 안에 다양한 슬라이드 형태들을 통해 개성있는 웹 페이지 슬라이드를 구성 할 수 있습니다.
 >css
 swifer 슬라이드 플러그인과 연결하기 위해서는 아래에 있는 링크를 header 안에 삽입하여 주세요.
@@ -53,7 +53,7 @@ swifer 슬라이드 플러그인과 연결하기 위해서는 아래에 있는 �
   <div class="swiper-scrollbar"></div>
 </div>
 ```
-자바스크립트를 통해 옵션들을 변경하여 다양한 슬라이드 효과들을 구성할 수 있습니다. 
+>자바스크립트를 통해 옵션들을 변경하여 다양한 슬라이드 효과들을 구성할 수 있습니다. 
 ```javascript
 new Swiper('.promotion .swiper', {
     // Optional parameters
@@ -88,25 +88,25 @@ new Swiper('.promotion .swiper', {
 ```
 
 ## 구글 폰트 설정
-간단한 링크 연결을 통해 구글에 있는 다양한 폰트들을 사용 할 수 있으며, 나눔고딕체를 사용하였습니다
+>간단한 링크 연결을 통해 구글에 있는 다양한 폰트들을 사용 할 수 있으며, 나눔고딕체를 사용하였습니다
 ```html
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 ```
 ##  구글 아이콘 설정
-폰트 설정과 마찬가지로 링크 연견을 통해 구글에 있는 다양한 아이콘들을 사용 할 수 있습니다.
+>폰트 설정과 마찬가지로 링크 연견을 통해 구글에 있는 다양한 아이콘들을 사용 할 수 있습니다.
 ```html
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 ```
 ## gsap
-gsap 플러그인을 통해 다양한 애니메이션을 사용 할 수 있으며, 메인 비쥬얼 영역에서 순차적으로 나타나는 효과를 주었습니다
+>gsap 플러그인을 통해 다양한 애니메이션을 사용 할 수 있으며, 메인 비쥬얼 영역에서 순차적으로 나타나는 효과를 주었습니다
 ```html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
         integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
-순차적으로 나타나는 효과의 자바스크립트는 이렇게 주었습니다.
+>순차적으로 나타나는 효과의 자바스크립트는 이렇게 주었습니다.
 ```javascript
 const fadeEl = document.querySelectorAll(".visual .fade-in");
 fadeEl.forEach(function (fadeEl, index) {
@@ -119,7 +119,7 @@ fadeEl.forEach(function (fadeEl, index) {
 ```
 
 ## scroll Magic
-스크롤 매직이라는 플러그인을 통해, 기존 스크롤에 따른 효과를 주기 위해서 복잡했던 과정을 단순하게 처리할 수 있습니다.
+>스크롤 매직이라는 플러그인을 통해, 기존 스크롤에 따른 효과를 주기 위해서 복잡했던 과정을 단순하게 처리할 수 있습니다.
 아래 스크립트로 문서와 연결한 뒤 사용해 줍니다.
 ```html
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
