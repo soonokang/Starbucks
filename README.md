@@ -98,3 +98,22 @@ new Swiper('.promotion .swiper', {
 ```html
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 ```
+## gsap
+gsap 플러그인을 통해 다양한 애니메이션을 사용 할 수 있으며, 메인 비쥬얼 영역에서 순차적으로 나타나는 효과를 주었습니다
+```html
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
+순차적으로 나타나는 효과의 자바스크립트는 이렇게 주었습니다.
+```javascript
+const fadeEl = document.querySelectorAll(".visual .fade-in");
+fadeEl.forEach(function (fadeEl, index) {
+  // gsap문법 => gsap.to(요소, 지속시간(초단위), 옵션)
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * 0.3, //0.7 ,1.4, 2.1, 2.8
+    opacity: 1,
+  });
+});
+```
