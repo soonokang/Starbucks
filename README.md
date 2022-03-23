@@ -86,3 +86,10 @@ new Swiper('.promotion .swiper', {
   }
   });
 ```
+
+## 구글 폰트 설정
+간단한 링크 연결을 통해 구글에 있는 다양한 폰트들을 사용 할 수 있으며, 나눔고딕체를 사용하였습니다
+```html
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+```
