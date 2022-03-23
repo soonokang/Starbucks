@@ -93,3 +93,8 @@ new Swiper('.promotion .swiper', {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 ```
+##  구글 아이콘 설정
+폰트 설정과 마찬가지로 링크 연견을 통해 구글에 있는 다양한 아이콘들을 사용 할 수 있습니다.
+```html
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+```
