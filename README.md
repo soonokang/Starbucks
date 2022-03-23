@@ -150,7 +150,8 @@ spyEls.forEach(function (spyEl) {
 
 # after
 >![toggle-btn-before](./images/toggle-promotion-after.PNG)
->Javascript
+
+# Javascript
 ```javascript
 const promotionEl = document.querySelector(".promotion"); //슬라이드 영역 요소
 const promotionToggleBtn = document.querySelector(".toggle-promotion"); //슬라이드 영역을 토글할 버튼 검색
