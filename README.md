@@ -117,3 +117,26 @@ fadeEl.forEach(function (fadeEl, index) {
   });
 });
 ```
+
+## scroll Magic
+스크롤 매직이라는 플러그인을 통해, 기존 스크롤에 따른 효과를 주기 위해서 복잡했던 과정을 단순하게 처리할 수 있습니다.
+아래 스크립트로 문서와 연결한 뒤 사용해 줍니다.
+```html
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+        integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+```
+
+>javascript
+scrill-spy라는 클래스를 통하여 스크롤 효과가 나타나길 원하는 html 태그 위치에 클래스를 추가해주면 스크롤이 그 위치를 터치했을 때 효과가 나타납니다.
+```javascript
+const spyEls = document.querySelectorAll("section.scroll-spy");
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic.Scene({
+    triggerElement: spyEl,
+    triggerHook: 0.8,
+  })
+    .setClassToggle(spyEl, "show")
+    .addTo(new ScrollMagic.Controller());
+});
+```
