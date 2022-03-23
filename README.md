@@ -150,3 +150,22 @@ spyEls.forEach(function (spyEl) {
 
 # after
 >![toggle-btn-before](./images/toggle-promotion-after.PNG)
+>Javascript
+```javascript
+const promotionEl = document.querySelector(".promotion"); //슬라이드 영역 요소
+const promotionToggleBtn = document.querySelector(".toggle-promotion"); //슬라이드 영역을 토글할 버튼 검색
+
+let isHidePromotion = false;
+
+
+promotionToggleBtn.addEventListener("click", function () {
+  isHidePromotion = !isHidePromotion;
+  if (isHidePromotion) {
+    promotionEl.classList.add("show");
+    promotionToggleBtn.classList.add("rotate"); //버튼 180도 회전기능 
+  } else {
+    promotionEl.classList.remove("show");
+    promotionToggleBtn.classList.remove("rotate"); 
+  }
+});
+```
